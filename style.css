@@ -1,5 +1,14 @@
 @import url("https://rsms.me/inter/inter.css");
 
+@font-face {
+	font-family: 'Cascadia Code';
+	src: url("./fonts/CascadiaCode.ttf");
+}
+
 * {
 	font-family: 'Inter', sans-serif;
+}
+
+code {
+	font-family: 'Cascadia Code';
 }
