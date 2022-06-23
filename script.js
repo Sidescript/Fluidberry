@@ -1,4 +1,5 @@
-function copyDiscord() {
-	let discord = document.getElementById("dc")
-	navigator.clipboard.writeText(discord.innerText)
-}
+window.addEventListener("beforeunload", function() {
+	this.document.body.classList.add("animate-out")
+})
+
+console.log("Hi ^_^")

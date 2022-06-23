@@ -6,35 +6,78 @@
 }
 
 * {
-	font-family: 'Inter', sans-serif;
-}
-
-code {
 	font-family: 'Cascadia Code';
 }
 
-.plain {
-	background-color: transparent;
+body {
+	margin: 0;
 	padding: 0;
+	overflow: hidden;
+}
+
+blurple {
+	color: #7289DA;
+}
+
+red {
+	color: #FF0000;
+}
+
+blue {
+	color: #1DA1F2;
+}
+
+a.invis {
+	text-decoration: none;
 	color: inherit;
-	font-size: inherit;
-	transition: 1s;
 }
 
-.plain:hover {
-	color: #7786DA;
+.offset {
+	padding-left: 8px;
 }
 
-.credit {
-	position: fixed;
-	background-color: #080808;
-	color: #FFFFFF;
-	border-radius: 10px;
-	padding: 7px;
-	bottom: 0;
+.headbar {
+	overflow: hidden;
+	padding: 0 0 3px 0;
+	border-bottom: solid 3px #000;
 }
 
-.small {
-	opacity: 0.9;
-	font-size: 8px;
+.headbar a {
+	margin: 4px;
+	float: left;
+	color: #000;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+.headbar a:hover {
+	background-color: #EEE;
+}
+
+.headbar a.active {
+	background-color: #000;
+	color: #EEE;
+}
+
+.animate-in {
+	-webkit-animation: fadeIn .5s ease-in;
+	animation: fadeIn .5s ease-in;
+}
+
+.animate-out {
+	-webkit-transition: opacity .5s;
+	transition: opacity .5s;
+	opacity: 0;
+}
+
+@-webkit-keyframes fadeIn {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+	from {opacity: 0;}
+	to {opacity: 1;}
 }
